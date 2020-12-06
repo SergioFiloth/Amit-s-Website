@@ -189,6 +189,56 @@ a {
     padding: 0 1.5rem;
 }
 
+.contFaqs {
+    padding: 2rem;
+}
+
 .faqs {
-    background-color: red;
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-gap: 1.6rem;
+}
+
+.faqsTitle {
+    text-align: center;
+    font-size: 2rem;
+    margin-bottom: 2rem;
+    font-weight: 800;
+}
+
+.btnItem {
+    display: flex;
+    justify-content: space-between;
+    background-color: #dde6eb;
+    border: 2px solid #d2e1e9;
+    padding: .5rem;
+}
+
+.contentFaqs {
+    background-color: #e8eef1;
+    padding: 1rem 0.5rem;
+}
+
+.active .plus {
+    display: none;
+}
+
+.minus {
+    display: none;
+}
+
+.active .minus {
+    display: inline;
+}
+
+.contentFaqs {
+    transition: max-height .6s ease-in-out, opacity .6s ease-in-out;
+    max-height: 0px;
+    overflow: hidden;
+    opacity: 0;
+}
+
+.active+.contentFaqs {
+    max-height: 1000px;
+    opacity: 1;
 }
