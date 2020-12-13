@@ -11,6 +11,10 @@
     font-family: Roboto;
 }
 
+ul {
+    list-style: none;
+}
+
 h1,
 h2,
 h3,
@@ -209,15 +213,15 @@ a {
 
 .faqs {
     display: grid;
-    grid-template-columns: repeat(2, 1fr);
     grid-gap: 1rem;
+    grid-template-columns: repeat(2, 1fr);
 }
 
 .faqsTitle {
     text-align: center;
     font-size: 2rem;
     margin-bottom: 2rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 .btnItem {
@@ -247,7 +251,7 @@ a {
 .contentFaqs {
     background-color: #e8eef1;
     padding: 1rem 0.5rem;
-    transition: max-height .6s ease-in-out, opacity .6s ease-in-out;
+    transition: max-height .6s, opacity .6s;
     max-height: 0px;
     overflow: hidden;
     opacity: 0;
@@ -319,7 +323,7 @@ a {
     justify-content: center;
     text-align: center;
     padding: 0 5rem;
-    font-weight: 800;
+    font-weight: 700;
 }
 
 /* Separator line in the footer */
@@ -333,6 +337,12 @@ a {
     font-size: 1.1rem;
     text-transform: uppercase;
     color: var(--colorF);
+    transition: color .3s;
+}
+
+.linksF:hover {
+    color: #fff;
+    text-decoration: underline;
 }
 
 .footer__description {
@@ -356,6 +366,10 @@ a {
     margin: 0 1rem;
 }
 
+.socialIcons:hover {
+    color: #fff;
+}
+
 .secondSection {
     padding: 2rem;
     font-size: 0.9rem;
@@ -371,6 +385,7 @@ a {
     display: inline-block;
     margin-left: 1rem;
     color: var(--colorF);
+    transition: color .3s;
 }
 
 .sSecLink:hover {
